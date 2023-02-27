@@ -45,7 +45,7 @@ As an Analytics Professional, timeseries data is one of the most common data typ
 
 #### End goal:
 
-![image](https://user-images.githubusercontent.com/72181097/221604470-4d241283-d8cd-4fec-88c9-4e2754c59a90.png)
+![image](https://user-images.githubusercontent.com/72181097/221606072-dfa48814-cc65-4948-abad-d6a404181284.png)
 
 ## 2nd VM Exercise
 
