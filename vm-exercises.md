@@ -29,15 +29,15 @@ As an Analytics Professional, timeseries data is one of the most common data typ
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
 - Step 1
-•	Open the workbook titled ex-1-intial.twbx. Note that the Columns (Month (Trading Interval) and Rows (Water Type) have been pre-populated for you. 
+-	Open the workbook titled ex-1-intial.twbx. Note that the Columns (Month (Trading Interval) and Rows (Water Type) have been pre-populated for you. 
 - Step 2
-•	Drag the Water Price into the Text field in the Marks Pane. Convert this from a Summed Aggregation to an Average Aggregation. 
+-	Drag the Water Price into the Text field in the Marks Pane. Convert this from a Summed Aggregation to an Average Aggregation. 
 - Step 3
-•	Click on Analysis, Totals and then check both the Show Row Grand Totals and Show Column Grand Totals. This will reflect the Year to Date Average (for each Water Type, as well as the Monthly Average. 
+-	Click on Analysis, Totals and then check both the Show Row Grand Totals and Show Column Grand Totals. This will reflect the Year to Date Average (for each Water Type, as well as the Monthly Average. 
 - Step 4
-•	Create a new calculated field called Anomalous Classification that segments the top 5% of Water Pricing data as anomalous (e.g. 95th Percentile), and all other values as non-anomalous. 
+-	Create a new calculated field called Anomalous Classification that segments the top 5% of Water Pricing data as anomalous (e.g. 95th Percentile), and all other values as non-anomalous. 
 - Step 5
-•	Drag in the Anomalous Classification field into the Filter and exclude all Anomalous Values. 
+-	Drag in the Anomalous Classification field into the Filter and exclude all Anomalous Values. 
 
 
 #### Exercise question:
@@ -71,11 +71,11 @@ Previously we identified that the months of January, February and March had the 
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
 - Step 1
-•	Open the workbook titled ex-2-intial.twbx. Note that the Anomalous Classification Field you previously created has already been dragged into the Color Field under the Marks Pane.
+-	Open the workbook titled ex-2-intial.twbx. Note that the Anomalous Classification Field you previously created has already been dragged into the Color Field under the Marks Pane.
 - Step 2
-•	Create a new calculated field called ‘Market Classification’ which classifies a month as ‘Peak’ if the month is January, February or March. Otherwise, it’s ‘Non-Peak’. 
+-	Create a new calculated field called ‘Market Classification’ which classifies a month as ‘Peak’ if the month is January, February or March. Otherwise, it’s ‘Non-Peak’. 
 - Step 3
-•	For the Columns, drag the Water Type and Market Water Demand Fields, whereas for the rows, drag in the Peak_Classification and Water Price Fields. Ensure you uncheck Aggregate Measures for your Scatter Plot.
+-	For the Columns, drag the Water Type and Market Water Demand Fields, whereas for the rows, drag in the Peak_Classification and Water Price Fields. Ensure you uncheck Aggregate Measures for your Scatter Plot.
 
 #### Exercise question:
 •	Analyzing the Scatter Plot you’ve created, which Water Product and Market Classification, has the majority of Anomalous Values? 
