@@ -9,69 +9,79 @@
 
 #### Dataset
 
-- [ ] Add datasets used to the `datasets/` folder
+- [x] Add datasets used to the `datasets/` folder
 
 #### Files
 
-- [ ] **Initial**: Add file to the `exercises/`  folder with the name `ex-1-intial.twbx` or `ex-1-intial.pbix`, depending if you are auditioning for a Tableau or Power BI course.
-- [ ] **Solution**: Add file to the `exercises/`  folder with the name `ex-1-sol.twbx` or `ex-1-sol.pbix`
+- [x] **Initial**: Add file to the `exercises/`  folder with the name `ex-1-intial.twbx` or `ex-1-intial.pbix`, depending if you are auditioning for a Tableau or Power BI course.
+- [x] **Solution**: Add file to the `exercises/`  folder with the name `ex-1-sol.twbx` or `ex-1-sol.pbix`
 
 #### Learning Objective
 
-*One measurable learning objective that this exercise assesses*
+*Demonstrate how to utilize the PERCENTILE function to identify and remove anomalous values *
 
 #### Context
 
-*3 - 4 sentence description of why it’s important to learn how to do this task (linking back to the learning objective). Explain how this would be used in a real-life situation. Why is it useful, what problem does it solve?*
+As an Analytics Professional, timeseries data is one of the most common data types you’ll be interacting with. Standard performance reporting will have you contrast different business products against each other and occasionally, remove anomalous data points, to improve reporting accuracy for Management. In this exercise, you’ll be seeking to analyse Water Pricing Data  for two water products, Soft and Hard Water, where you’ll be using the PERCENTILE() functions you’ve learned, to remove anomalous values and provide a true reflection of the average monthly pricing for both Soft and Hard water products!  
 
 #### Steps to be executed by the student (max 6)
 
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
 - Step 1
+•	Open the workbook titled ex-1-intial.twbx. Note that the Columns (Month (Trading Interval) and Rows (Water Type) have been pre-populated for you. 
 - Step 2
+•	Drag the Water Price into the Text field in the Marks Pane. Convert this from a Summed Aggregation to an Average Aggregation. 
 - Step 3
-- ...
+•	Click on Analysis, Totals and then check both the Show Row Grand Totals and Show Column Grand Totals. This will reflect the Year to Date Average (for each Water Type, as well as the Monthly Average. 
+- Step 4
+•	Create a new calculated field called Anomalous Classification that segments the top 5% of Water Pricing data as anomalous (e.g. 95th Percentile), and all other values as non-anomalous. 
+- Step 5
+•	Drag in the Anomalous Classification field into the Filter and exclude all Anomalous Values. 
+
 
 #### Exercise question:
-*This is a question presented to learners to check if the steps above were properly completed. It can be a multiple choice question or a question with a 1-3 word answer. It is often not possible to check if all the steps are completed, in this case; the priority is to check that the learner meets the learning objective.*
+*Having excluded all Anomalous Values – what is the new Average Water Price for the Year-to-Date? (This includes both Hard & Soft Water Products).*
 
 #### End goal:
 
-*Add an image of the final visualization here.*
+![image](https://user-images.githubusercontent.com/72181097/221604470-4d241283-d8cd-4fec-88c9-4e2754c59a90.png)
 
 ## 2nd VM Exercise
 
 #### Dataset
 
-- [ ] Add datasets used to the `datasets/` folder
+- [x ] Add datasets used to the `datasets/` folder
 
 #### Files
 
-- [ ] **Initial**: Add file to the `exercises/`  folder with the name `ex-2-intial.twbx` or `ex-2-intial.pbix`, depending if you are auditioning for a Tableau or Power BI course.
-- [ ] **Solution**: Add file to the `exercises/`  folder with the name `ex-2-sol.twbx` or `ex-2-sol.pbix`
+- [x ] **Initial**: Add file to the `exercises/`  folder with the name `ex-2-intial.twbx` or `ex-2-intial.pbix`, depending if you are auditioning for a Tableau or Power BI course.
+- [x ] **Solution**: Add file to the `exercises/`  folder with the name `ex-2-sol.twbx` or `ex-2-sol.pbix`
 
 #### Learning Objective
 
-*One measurable learning objective that this exercise assesses*
+*Upon completion of the Percentile Video, Student should be able to demonstrate how to utilize the PERCENTILE function to identify and or/remove anomalous values. *
 
 #### Context
 
-*3 - 4 sentence description of why it’s important to learn how to do this task (linking back to the learning objective). Explain how this would be used in a real-life situation. Why is it useful, what problem does it solve?*
+Previously we identified that the months of January, February and March had the highest average prices for our water products. In other words, we have peak months, which includes the first quarter of the year, and non-peak months, which makes up the rest. Now prices should be a  function of demand – so we might expect to see the majority of anomalous data points centred around the Water Product with higher pricing. However, as data professionals, we believe in testing our hypotheses, so let’s examine this below!
 
 #### Steps to be executed by the student (max 6)
 
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
 - Step 1
+•	Open the workbook titled ex-2-intial.twbx. Note that the Anomalous Classification Field you previously created has already been dragged into the Color Field under the Marks Pane.
 - Step 2
+•	Create a new calculated field called ‘Market Classification’ which classifies a month as ‘Peak’ if the month is January, February or March. Otherwise, it’s ‘Non-Peak’. 
 - Step 3
-- ...
+•	For the Columns, drag the Water Type and Market Water Demand Fields, whereas for the rows, drag in the Peak_Classification and Water Price Fields. Ensure you uncheck Aggregate Measures for your Scatter Plot.
 
 #### Exercise question:
-*This is a question presented to learners to check if the steps above were properly completed. It can be a multiple choice question or a question with a 1-3 word answer. It is often not possible to check if all the steps are completed, in this case; the priority is to check that the learner meets the learning objective.*
+•	Analyzing the Scatter Plot you’ve created, which Water Product and Market Classification, has the majority of Anomalous Values? 
 
 #### End goal:
 
-*Add an image of the final visualization here.*
+![image](https://user-images.githubusercontent.com/72181097/221604261-e60aea7d-8cdc-4cc0-98e8-5dba08530ee9.png)
+
 
