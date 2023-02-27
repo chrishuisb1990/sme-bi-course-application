@@ -82,6 +82,6 @@ Previously we identified that the months of January, February and March had the 
 
 #### End goal:
 
-![image](https://user-images.githubusercontent.com/72181097/221604261-e60aea7d-8cdc-4cc0-98e8-5dba08530ee9.png)
+![image](https://user-images.githubusercontent.com/72181097/221604910-bec8dac6-2044-4925-aae6-c8baf6337e07.png)
 
 
